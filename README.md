@@ -67,8 +67,92 @@ This project employs the **Structured System Analysis and Design Method (SSADM)*
 3. **Implementation:** Developing the flood prediction model and web interface.
 4. **Testing:** Ensuring system functionality and accuracy.
 5. **Operation and Maintenance:** Deploying the system and performing regular maintenance.
-
-
+   
+## Project Directory
+'''
+├─ app
+│  ├─ Actions
+│  │  ├─ Fortify
+│  │  │  ├─ CreateNewUser.php
+│  │  │  ├─ PasswordValidationRules.php
+│  │  │  ├─ ResetUserPassword.php
+│  │  │  ├─ UpdateUserPassword.php
+│  │  │  └─ UpdateUserProfileInformation.php
+│  │  └─ Jetstream
+│  │     └─ DeleteUser.php
+│  ├─ Http
+│  │  └─ Controllers
+│  │     ├─ Admin
+│  │     │  ├─ AdminController.php
+│  │     │  ├─ DashboardController.php
+│  │     │  ├─ ProfileController.php
+│  │     │  ├─ SystemConfigController.php
+│  │     │  └─ UserController.php
+│  │     ├─ Controller.php
+│  │     ├─ FeedbackController.php
+│  │     ├─ FloodPredictionsController.php
+│  │     ├─ HomeController.php
+│  │     └─ LockController.php
+│  ├─ Mail
+│  │  └─ PredictionResultMail.php
+│  ├─ Models
+│  │  ├─ Feedback.php
+│  │  ├─ Prediction.php
+│  │  ├─ SystemConfig.php
+│  │  └─ User.php
+│  ├─ Providers
+│  │  ├─ AppServiceProvider.php
+│  │  ├─ FortifyServiceProvider.php
+│  │  └─ JetstreamServiceProvider.php
+│  └─ View
+│     └─ Components
+│        ├─ AppLayout.php
+│        └─ GuestLayout.php
+├─ artisan
+├─ bootstrap
+│  ├─ app.php
+│  ├─ cache
+│  │  ├─ .gitignore
+│  │  ├─ packages.php
+│  │  └─ services.php
+│  └─ providers.php
+├─ composer.json
+├─ composer.lock
+├─ config
+│  ├─ app.php
+│  ├─ auth.php
+│  ├─ cache.php
+│  ├─ database.php
+│  ├─ filesystems.php
+│  ├─ fortify.php
+│  ├─ jetstream.php
+│  ├─ logging.php
+│  ├─ mail.php
+│  ├─ queue.php
+│  ├─ sanctum.php
+│  ├─ services.php
+│  └─ session.php
+├─ database
+│  ├─ .gitignore
+│  ├─ factories
+│  │  └─ UserFactory.php
+│  ├─ migrations
+│  │  ├─ 0001_01_01_000000_create_users_table.php
+│  │  ├─ 0001_01_01_000001_create_cache_table.php
+│  │  ├─ 0001_01_01_000002_create_jobs_table.php
+│  │  ├─ 2024_05_28_082218_add_two_factor_columns_to_users_table.php
+│  │  ├─ 2024_05_28_082312_create_personal_access_tokens_table.php
+│  │  ├─ 2024_07_07_114547_create_predictions_table.php
+│  │  ├─ 2024_07_07_193637_create_feedback_table.php
+│  │  └─ create_system_table.php
+│  └─ seeders
+│     └─ DatabaseSeeder.php
+├─ package-lock.json
+├─ package.json
+├─ phpunit.xml
+├─ postcss.config.js
+├─ public
+'''
 
 ## Contributors
 - **Chikuro Emmanuel Mbaji** (Admission Number: 151947)
