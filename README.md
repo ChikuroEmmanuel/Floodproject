@@ -1,27 +1,18 @@
-# Disaster Watch: Flood Prediction Web Application
+# Disaster Watch: Flood Prediction Web Application That Uses Decision Tree Algorithm to predict Floods.
 
 ## Overview
 **Disaster Watch** is a web application designed to predict floods in informal settlement areas in Kenya using machine learning algorithms. This project leverages a Decision Tree algorithm to analyze historical rainfall data and forecast potential flood occurrences and their severity.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Methodology](#methodology)
-- [Tools and Technologies](#tools-and-technologies)
-- [Contributors](#contributors)
-- [Acknowledgements](#acknowledgements)
-- [License](#license)
-
-## Introduction
-Flood prediction is crucial for disaster management and mitigating risks associated with floods. This project aims to develop a robust system that forecasts floods using historical rainfall data. The web application targets informal settlements in Kenya, where flood risks are exacerbated by factors such as climate change and urbanization.
-
-## Features
-- **Flood Prediction:** Utilizes Decision Tree algorithms to predict flood occurrences based on historical rainfall data.
-- **Data Preprocessing:** Cleans and processes data to handle missing values and convert categorical variables.
-- **Early Warning System:** Provides valuable insights for early warning systems and disaster response planning.
-- **User Interface:** Interactive web interface for users to access flood predictions and relevant information.
+## Tools and Dependencies
+- **Node js**: https://nodejs.org/en
+- **Visual Studio Code**
+- **Pycharm IDE**
+- **Anaconda**:https://www.anaconda.com/download
+- **Machine Learning Libraries:** Pandas, scikit-learn, tensorFlow
+- **Web Frameworks** Laravel, Flask API
+  ## Dataset
+  This project needs a reliable datasets which you can get easily by following the following link:
+  (https://www.kaggle.com/datasets)
 
 ## Installation
 To run this project locally, follow these steps:
@@ -34,13 +25,34 @@ To run this project locally, follow these steps:
 
 2. **Install dependencies:**
     ```bash
-    pip install -r requirements.txt
+    composer require laravel/jetstream
+    ```
+3. **Install livewire Jetstream**
+     ```bash
+    php artisan jetstream:install livewire
+    ```
+4. **Run Npm module**
+     ```bash
+   npm run dev
     ```
 
-3. **Run the application:**
+5. **Run the application:**
     ```bash
-    python app.py
+    php artisan serve
     ```
+# Machine Learning installation
+To run the machine learning model follow the steps:
+1. **Install machine learning framework**
+   ```bash
+     pip install tensorflow
+
+    ```
+2. **Install Flask**
+    ```bash
+     pip install flask
+
+    ```
+  
 
 ## Usage
 1. **Data Input:** Upload historical rainfall data in CSV format.
@@ -56,12 +68,7 @@ This project employs the **Structured System Analysis and Design Method (SSADM)*
 4. **Testing:** Ensuring system functionality and accuracy.
 5. **Operation and Maintenance:** Deploying the system and performing regular maintenance.
 
-## Tools and Technologies
-- **Programming Languages:** Python, HTML
-- **Machine Learning Libraries:** Pandas, scikit-learn
-- **Database:** MySQL
-- **Data Source:** Kaggle
-- **Version Control:** GitHub
+
 
 ## Contributors
 - **Chikuro Emmanuel Mbaji** (Admission Number: 151947)
